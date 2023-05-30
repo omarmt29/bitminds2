@@ -1,17 +1,19 @@
+import 'animate.css';
+
 
 function App() {
-
     return(
 
     <main className="h-full w-full bg-[url('/bg.jpg')] bg-cover	bg-no-repeat	bg-center	">
 
-        <div className="h-screen w-full flex flex-col gap-10 justify-center items-center px-10 sm:px-0">
+        <div className="h-screen w-full flex flex-col gap-10 justify-center items-center px-10 sm:px-0 ">
 
             <img
                 src="/logo.png"
                 width={200}
                 height={200}
                 alt="Picture of the author"
+                className='animate__animated animate__jello animate__slower'
 
             />
 
@@ -19,6 +21,7 @@ function App() {
 
         </div>
 
+        
         <div className='grid md:grid-cols-1 lg:grid-cols-2  px-5  container m-auto gap-10 pt-12 md:pt-32 border-t-2 border-gray-800'>
             <div className='w-full justify-center flex  h-full '>
                 <div className='justify-center items-center gap-4 w-full flex flex-col'>
@@ -30,7 +33,9 @@ function App() {
                         className='mb-10'
 
                     />
-                    <h2 className='text-amber-200 text-2xl'>Descubre qué es Bitminds</h2>
+           
+                    <h2  className=' text-amber-200 text-2xl '>Descubre qué es Bitminds</h2>
+       
                     <p className='text-1xs text-center text-gray-300'>Bitminds es un grupo de conocimiento dedicado a brindar recursos y apoyo a personas interesadas en aprender sobre desarrollo web. Nos enfocamos en proporcionar información clara y accesible para aquellos que deseen sumergirse en el fascinante mundo de la programación y el diseño web. Aquí encontrarás contenido educativo, tutoriales, consejos y trucos para ayudarte a desarrollar tus habilidades y conocimientos.</p>
                 </div>
             </div>
@@ -40,6 +45,7 @@ function App() {
                 </div>
             </div>
         </div>
+
 
         <div className='grid md:grid-cols-1 lg:grid-cols-2   px-5   container m-auto gap-10 mt-12 pt-12 md:mt-32  md:pt-32 border-t-2 border-gray-800'>
 
@@ -60,7 +66,7 @@ function App() {
             </div>
 
         </div>
-
+  
         <div className='flex container m-auto gap-10 mt-12 pt-12 md:mt-32 px-5  md:pt-32 border-t-2 border-gray-800'>
 
             <div className='w-full justify-center flex h-full '>
